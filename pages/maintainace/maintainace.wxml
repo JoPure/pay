@@ -1,0 +1,10 @@
+<!--maintainace.wxml-->
+  <view style="width:100%;text-align:center;display:flex;flex-direction:column;margin-top:40%;">
+    <icon type="waiting" size="60" color="#e64340" /> 
+    <text style="margin-top:10px;color:#8c8c8c; font-size:14px;">系统维护中</text>
+    <view style="margin-top:10px;color:#8c8c8c; font-size:12px;">
+     <text>维护时间：20:00 - 22:00</text>
+    </view>
+    <button style="margin-top:20px;color:#8c8c8c;" size="mini" open-type="contact">联系客服</button>
+  </view>
+  <view class="copyright">Copyright © 2009-2017 第七大道</view>

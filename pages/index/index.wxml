@@ -1,0 +1,20 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!--<block wx:if="{{showChose}}">
+    <view class="chose-yuangong" bindtap="choseYG">
+      <image src="../images/yuangong.png"></image>
+      <text>员工入口</text>
+    </view>
+    <view class="chose-shop" bindtap="choseShop">
+      <image src="../images/shop2.png"></image>
+      <text>商家入口</text>
+    </view>
+  </block>-->
+
+  <view style="width:100%;text-align:center;display:flex;flex-direction:column;margin-top:40%;">
+    <icon type="waiting" size="60" color="rgb(16,174,225)" /> 
+    <text style="margin-top:10px;">用户校验中</text>
+  </view>
+
+  <view class="copyright">Copyright © 2009-2017 第七大道</view>
+</view>

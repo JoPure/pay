@@ -1,0 +1,78 @@
+/* pages/bind/bind.wxss */
+
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.shop-wrap {
+  width: 100%;
+  padding: 20rpx 5%;
+  height: 64rpx;
+  line-height: 64rpx;
+  display: flex;
+}
+
+.shop-wrap text {
+  display: block;
+  height: 64rpx;
+  line-height: 64rpx;
+  font-size: 14px;
+  padding-left: 20rpx;
+}
+
+.shop-wrap image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-top: 10rpx;
+}
+
+.input-wrap {
+  display: flex;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding: 10rpx 10rpx 10rpx 40rpx;
+  margin-top: 20rpx;
+}
+
+.input-wrap input {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  letter-spacing: 0;
+  width: 60%;
+}
+
+.input1 {
+  padding-left: 40rpx;
+}
+
+.input-wrap .sendBtn {
+  font-size: 14px;
+  border-radius: 2px;
+  width: 42%;
+  padding-top: 6rpx;
+}
+
+.input-wrap .sendBtn.sended{
+  color: #b2b2b2;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 8rpx;
+}
+.input-wrap .sendBtn.sended::after{
+  display: none;
+}
+.confirm-btn {
+  width: 90%;
+  margin-top: 40rpx;
+}
+
+.button-hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+}

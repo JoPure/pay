@@ -1,0 +1,22 @@
+ <!--pages/confirm-pay/confirm-pay.wxml-->
+<view class="container">
+  <form bindsubmit="pay" report-submit="true">
+    <view style="width:100%;">
+      <text class="orderid">订单编号： {{transactionId}}</text>
+    </view>
+    <view style="width:100%;">
+      <text class="money">￥{{money}}</text>
+    </view>
+    <view class="orderinfo">
+      <view>
+        <text>收款方</text>
+        <text>{{shopName}}</text>
+      </view>
+      <view>
+        <text>订单编号</text>
+        <text>{{transactionId}}</text>
+      </view>
+    </view>
+    <button type="primary" class="pay-btn" formType="submit"> 支付 </button>
+  </form>
+</view>

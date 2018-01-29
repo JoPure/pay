@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shop-tips/shop-tips",
+    "pages/maintainace/maintainace",
+    "pages/recharge/recharge",
+    "pages/pay-result/pay-result",
+    "pages/bind/bind",
+    "pages/orders/orders",
+    "pages/days/days",
+    "pages/pay/pay",
+    "pages/confirm-pay/confirm-pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": "true"
+  }
+}

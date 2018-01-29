@@ -1,0 +1,58 @@
+<view class="container">
+  <!--<view class="gonggao">
+    <image src="../images/lb.png" class="icon"></image>
+    <text>系统将于22：00进行例行维护</text>
+  </view>-->
+  <view class="info-wrap">
+    <view class="info-item">
+      <view class="title">
+        <image align="center" class="icon" src="../images/tj.png"></image>
+        <text>今日营业统计</text>
+      </view>
+      <view style="padding:10rpx 0;">
+        <text class="currency">￥</text>
+        <text class="number">{{dailySum/100}}</text>
+      </view>
+    </view>
+    <view class="info-item" bindtap="gotoDays">
+      <view class="title">
+        <image class="icon" src="../images/dd.png"></image>
+        <text>今日订单数</text>
+      </view>
+      <view style="padding:10rpx 0;">
+        <text class="number">{{dailyCount}}</text>
+      </view>
+    </view>
+  </view>
+  <text class="main-title">最新支付订单</text>
+  <view class="latest-order">
+    <text class="money">{{price}}</text>
+    <text class="orderno">订单号：{{transactionId}}</text>
+    <image class="icon-latest" src="../images/latest.png"></image>
+    <image class="icon-lingdang" src="../images/lingdang.png"></image>
+  </view>
+  <text class="main-title">历史最新三条支付订单</text>
+  <view class="history-orders">
+    <view class="order-item" wx:for="{{orderData}}" wx:for-index="idx" wx:for-item="order">
+      <view class="userinfo-wrap">
+        <view class='userhead'>
+          <image src="../images/use2r.png" class='shopicon'></image>
+        </view>
+        <view class="userinfo">
+          <text class="shop">{{order.shopName}}</text>
+          <text class="datetime">{{order.time}}</text>
+        </view>
+      </view>
+      <image src="../images/payed.png" class='payed-icon'></image>
+      <view class="pay-money">
+        <text class="money">+{{order.price/100}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="more" bindtap="gotoDays">更多历史订单</view>
+  <view style="width:100%; text-align:center; margin-top:10px;"> 
+    <button style="color:#8c8c8c;" class="connect" open-type="contact">联系客服</button>
+  </view>
+  <view class="copyright">Copyright © 2009-2017 第七大道</view>
+  <audio src="{{audio}}" id="myAudio" controls loop></audio>
+</view>

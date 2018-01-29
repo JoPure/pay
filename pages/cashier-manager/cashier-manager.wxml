@@ -1,0 +1,52 @@
+<!--cashier-manager.wxml-->
+
+<view class="container">
+
+  <view class="dialog {{ showDialog ? 'dialog-show' : '' }}">
+    <view class="dialog-mask" bindtap="closeDialog" />
+    <view class="dialog-container">
+      <view class="form">
+        <view class="itemView">
+          <text>姓名：</text>
+          <input class="input" name="userName" placeholder="请输入姓名" value="{{selectedCashier.username}}" />
+        </view>
+        <view class="itemView">
+          <text>电话：</text>
+          <input class="input" name="userName" placeholder="请输入电话号" value="{{selectedCashier.tel}}" />
+        </view>
+        <!--<view class="itemView">
+          <text>档口：</text>
+          <input class="input" name="userName" placeholder="请选择档口" value="{{selectedCashier.username}}" />
+        </view>-->
+      </view>
+      <view class="form-btns">
+        <button class="cancel" bindtap="closeDialog">取消</button>
+        <button class="submit">确认</button>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="win-wrap {{showWins ? 'active': ''}}">
+    <view style="inline-block" bindtap="showWins">全部档口</view>
+    <view class="arrow"></view>
+  </view>
+  <view class="cashier-list">
+    <view class="cashier" wx:for="{{cashiers}}" wx:for-index="idx" wx:for-item="cashier">
+      <view class="cashier-wrap">
+        <image src="../images/person.png"></image>
+        <view class="cashier-info">
+          <text class="username">{{cashier.username}}</text>
+          <text class="tel">{{cashier.tel}}</text>
+        </view>
+
+      </view>
+      <text>{{cashier.winName}}</text>
+      <view class="btns">
+        <button class="edit-btn" bindtap="choseCashier" data-idx="{{idx}}">编辑</button>
+        <button class="del-btn" data-idx="{{idx}}">删除</button>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,44 @@
+/* pages/confirm-pay/confirm-pay.wxss */
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  /*display: flex;
+  flex-direction: column;*/
+  padding-top: 20px;
+}
+
+.button-primary {
+  width: 90%;
+}
+
+.orderid {
+  font-weight: 600;
+  width: 100%;
+}
+
+.money {
+  font-size: 30px;
+  width: 100%;
+}
+
+.orderinfo {
+  background-color: #fff;
+  padding: 30rpx;
+  margin-top: 10px;
+}
+
+.orderinfo view {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.pay-btn{
+  width: 90%;
+  margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+<!--pages/days/days.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="time headItem">{{year}}年{{month}}月</view>
+    <view class="inMoney headItem">
+      <text>收入</text>
+      <text class="tip">¥{{total/100}}</text>
+    </view>
+    <view>
+      <image src="../images/time.png" bindtap="showColumn"></image>
+    </view>
+  </view>
+  <scroll-view bindscrolltolower="loadmore" class="container scrollView" scroll-y="true">
+    <view class="order-item" wx:for="{{payData}}" wx:for-index="idx" wx:for-item="payData">
+      <view class='shopinfo'>
+        <image src="../images/use2r.png" class='shopicon'></image>
+      </view>
+      <view class="shopname">
+        <text class="shop">{{payData.shopName}}</text>
+        <text class="datetime"> {{payData.time}} </text>
+      </view>
+      <view class="pay-money">
+        <text class="money">+{{payData.price/100}}</text>
+      </view>
+    </view>
+    <view class="order-item" wx:if="{{noMoreDataTips}}">没有更多数据了...</view>
+  </scroll-view>
+  <view class="fullbg " style="display: {{ showBg ? 'block' : 'none'}} "></view>
+  <view class="day-column" style="display: {{ showPicker ? 'block' : 'none'}} ">
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px; display: {{ showBg ? 'block' : 'none'}} " value="{{[ year - 2017, month - 1]}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key="*" style="line-height: 50px">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" wx:key="*" style="line-height: 50px">{{item}}月</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+  
+</view>

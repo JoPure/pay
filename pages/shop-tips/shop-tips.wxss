@@ -1,0 +1,199 @@
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.info-wrap {
+  width: 98%;
+  background-color: #fff;
+  display: flex;
+  margin: 10rpx 1%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 20rpx 0;
+}
+
+.info-item {
+  width: 50%;
+  text-align: center;
+}
+
+.info-item:first-child {
+  border-right: 1rpx solid #f5f5f5;
+}
+
+.info-item .title {
+  line-height: 50rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.info-item .icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.main-title {
+  margin: 10rpx;
+  font-size: 12px;
+  color: #b2b2b2;
+}
+
+.currency {
+  font-size: 11pt;
+  color: #b2b2b2;
+}
+
+.number {
+  font-size: 20pt;
+  color: #1296db;
+}
+
+.gonggao {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20rpx 20rpx 0 20rpx;
+}
+
+.gonggao text {
+  margin-left: 20rpx;
+  color: #888;
+  font-size: 12px;
+}
+
+.gonggao image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.latest-order {
+  width: 98%;
+  background-color: #fff;
+  display: flex;
+  margin: 10rpx 1%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 20rpx 0;
+  position: relative;
+}
+
+.latest-order .money {
+  font-size: 40pt;
+}
+
+.latest-order .orderno {
+  font-size: 11pt;
+  color: #b2b2b2;
+}
+
+.latest-order .icon-latest {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.latest-order .icon-lingdang {
+  position: absolute;
+  top: 70rpx;
+  left: 50rpx;
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.history-orders {
+  width: 98%;
+  background-color: #fff;
+  display: flex;
+  margin: 10rpx 1%;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20rpx 0;
+  position: relative;
+}
+
+.order-item {
+  width: 98%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  margin: 3rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+  padding: 10rpx 1%;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.userinfo-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.userhead {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10rpx;
+}
+
+.userhead image {
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: 15rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.userinfo text {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.userinfo .datetime {
+  font-size: 12px;
+  color: #b2b2b2;
+}
+
+.userinfo .money {
+  font-size: 14pt;
+  color: #576b95;
+  font-weight: bold;
+}
+
+.payed-icon {
+  width: 128rpx;
+  height: 128rpx;
+}
+
+.more {
+  font-size: 12px;
+  color: #b2b2b2;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+#myAudio {
+  display: none;
+}
+
+.connect {
+  width: 30%;
+  font-size: 12px;
+}

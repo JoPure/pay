@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="shop-wrap">
+    <image src="../images/shop-color.png"></image>
+    <text>{{shopName}}</text>
+  </view>
+  <form bindsubmit="confirmPay" report-submit="true">
+    <view class="input-wrap">
+      <input type="digit" name="payMoney" maxlength="5" style="width:100%;" maxlength="6" placeholder="输入消费金额:(￥)" bindfocus="bindfocus" bindinput="bindNumberInput" focus="{{focus}}" value="{{payMoney}}" />
+    </view>
+    <view class="yue">
+      <view>
+        <text>饭卡余额</text>
+        <text class="money">{{personYue}}元</text>
+      </view>
+      <!--<view>
+        <text>公司账户余额</text>
+        <text class="money">{{companyYue}}</text>
+      </view>-->
+    </view>
+    <button type="primary" class="confirm-btn" formType="submit"> 确认 </button>
+  </form>
+  <view class="history-text">
+    <text bindtap="gotoOrders">
+      历史交易记录
+    </text>
+  </view>
+
+  <view class="helper">
+    <button size="mini" bindtap="gotoUboxRecharge" disabled="{{disabledUbox}}">友宝预充值</button>
+    <button size="mini" open-type="contact">联系客服</button>
+  </view>
+
+
+
+  <view class="copyright">Copyright © 2009-2017 第七大道</view>
+</view>

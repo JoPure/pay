@@ -1,0 +1,120 @@
+/* pages/push-money/push-money.wxss */
+
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.user-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10rpx 0rpx 0rpx 20rpx;
+  height: 138rpx;
+  margin-top: 10rpx;
+  /*margin-bottom: 12rpx;*/
+}
+
+.user-box .user-icon {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+}
+
+.user-name {
+  display: flex;
+  flex-wrap: wrap;
+  height: 120rpx;
+  margin-top: 10rpx;
+}
+
+.user-name text {
+  width: 100%;
+}
+
+.user-tip {
+  font-size: 10pt;
+}
+
+.fg {
+  height: 10rpx;
+  background: #eee;
+}
+
+.menu-box {
+  width: 100%;
+  height: auto;
+}
+
+.menu-box .menu-item {
+  height: 90rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.money {
+  color: #ff8247;
+  font-size: 12pt;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-right: 20rpx;
+}
+
+.menu-box .menu-item text {
+  height: 90rpx;
+  font-size: 14px;
+  color: #90908e;
+  line-height: 90rpx;
+  margin-left: 20rpx;
+}
+
+.item-vip {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-box .item-vip, .menu-box .item-help, .menu-box .item-aboutUs, .push-box {
+  /*margin-bottom: 4rpx;*/
+  border: 1rpx solid #f2f2f2;
+}
+
+.push-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.push-box .box {
+  text-align: center;
+  width: 30.5%;
+  line-height: 134rpx;
+  height: 134rpx;
+  border: 1rpx solid #ee9a49;
+  border-radius: 5%;
+  margin: 10rpx 1%;
+  color: #ee9a49;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-tip-1 {
+  width: 100%;
+}
+
+.box-tip-2 {
+  font-size: 12px;
+  margin-top: -40rpx;
+  width: 100%;
+}

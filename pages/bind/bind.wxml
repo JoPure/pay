@@ -1,0 +1,21 @@
+
+<!--pages/bind/bind.wxml-->
+<view class="container">
+  <view class="shop-wrap">
+    <image src="../images/num.png"></image>
+    <text>手机号校验</text>
+  </view>
+  <form bindsubmit="confirmInput" report-submit="true">
+    <view class="input-wrap">
+
+      <!--<text>输入手机号:</text>-->
+      <input type="digit" style="width:100%" name="num" maxlength="11" minlength="11" placeholder="输入手机号:" bindfocus="bindfocus" bindinput="bindNumberInput" focus="{{focusNum}}" value="{{cellphone}}" />
+    </view>
+    <view class="input-wrap">
+      <input type="digit" name="checkNum" maxlength="6" placeholder="请输入验证码:" bindfocus="bindfocus" bindinput="bindCodeInput" focus="{{focusCode}}" value="{{code}}" />
+      <button disabled="{{disabled}}" class="sendBtn {{sended ? 'sended' : ''}}" bindtap="getCode">{{sended ? sendedCodeTitle: sendCodeTitle}}{{times > 0 ? times + 's后再试':''}}</button>
+    </view>
+    <button type="primary" class="confirm-btn" bindtap="bindCellphone">绑定手机</button>
+  </form>
+  <view class="copyright">Copyright © 2009-2017 第七大道</view>
+</view>

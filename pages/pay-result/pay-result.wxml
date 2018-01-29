@@ -1,0 +1,9 @@
+<view class="container">
+  <icon type="{{result == 1 ? 'success' : 'warn'}}" size="90" />
+  <text wx:if="{{result == 1}}" class="title">支付成功</text>
+  <text wx:else class="title">支付失败</text>
+  <text style="color:#8c8c8c;font-size:14px;margin-top:10px;">收款方:{{msg_desc}}</text>
+  <text class="money">¥{{money}}</text>
+  <button type="primary" class="button-primary" bindtap="complete"> 完成 </button>
+  <view class="copyright">Copyright © 2009-2017 第七大道</view>
+</view>   
